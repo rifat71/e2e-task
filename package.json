@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js --tags",
+    "report": "node ./node_modules/cucumber-html-reporter/bin/cucumber-html-reporter.js",
+    "install:browsers": "npx playwright install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "chai": "^5.2.0",
-    "chai-as-promised": "^8.0.1",
-    "cucumber": "^6.0.7",
+    "@cucumber/cucumber": "^11.2.0",
+    "chai": "^4.5.0",
     "cucumber-html-reporter": "^7.2.0",
-    "selenium-webdriver": "^4.29.0"
+    "playwright": "^1.51.0"
   }
 }

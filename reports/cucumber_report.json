@@ -1,0 +1,84 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;unsuccessful-login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Unsuccessful login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1397561208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "features/step_definitions/loginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15118471000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I enter invalid email \"dummy@gmail.com\" and password \"12345678\"",
+            "match": {
+              "location": "features/step_definitions/loginSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132309583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see an error message \"ErrorInvalid Username or Password\"",
+            "match": {
+              "location": "features/step_definitions/loginSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1302173334
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 210413708
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "tags": [],
+    "uri": "features/login.feature"
+  }
+]
