@@ -41,5 +41,4 @@ When('I click the View Cart button on cheqQASuitePartnerPage page', async functi
 When('I wait for {int} sec', async function (timeInSec) {
   const timeInMs = timeInSec * 1000;
   await new Promise(resolve => setTimeout(resolve, timeInMs));
-  // await Promise.delay(timeInSec);
 });

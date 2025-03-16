@@ -1,4 +1,3 @@
-// features/step_definitions/myEventsSteps.js
 const { Given, Then, When } = require('@cucumber/cucumber');
 const { expect } = require('chai');
 const MyEventsPage = require('../../pages/MyEventsPage');

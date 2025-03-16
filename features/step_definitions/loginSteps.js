@@ -1,4 +1,3 @@
-// features/step_definitions/loginSteps.js
 const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
 const { expect } = require('chai');
 const LoginPage = require('../../pages/LoginPage');

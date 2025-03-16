@@ -1,6 +1,5 @@
 const BasePage = require("./BasePage");
 
-// pages/SuitePreferencesPage.js
 class SuitePreferencesPage extends BasePage{
   constructor(page) {
     super(page);

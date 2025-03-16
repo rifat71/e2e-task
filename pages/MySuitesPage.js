@@ -1,6 +1,5 @@
 const BasePage = require("./BasePage");
 
-// pages/MySuitesPage.js
 class MySuitesPage extends BasePage{
   constructor(page) {
     super(page);

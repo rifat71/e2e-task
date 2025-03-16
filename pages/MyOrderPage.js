@@ -1,6 +1,5 @@
 const BasePage = require("./BasePage");
 
-// pages/MyOrderPage.js
 class MyOrderPage extends BasePage{
   constructor(page) {
     super(page);

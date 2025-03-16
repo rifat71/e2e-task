@@ -1,4 +1,3 @@
-// pages/MyEventsPage.js
 const BasePage = require('./BasePage');
 
 class MyEventsPage extends BasePage {

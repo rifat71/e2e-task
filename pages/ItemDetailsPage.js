@@ -1,4 +1,3 @@
-// pages/ItemDetailsPage.js
 class ItemDetailsPage {
   constructor(page) {
     this.page = page;

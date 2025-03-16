@@ -1,7 +1,6 @@
 const BasePage = require("./BasePage");
 const ItemDetailsPage = require('./ItemDetailsPage');
 
-// pages/CheqQASuitePartnerPage.js
 class CheqQASuitePartnerPage extends BasePage {
   constructor(page) {
     super(page);
