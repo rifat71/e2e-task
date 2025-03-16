@@ -32,7 +32,7 @@ jobs:
         run: npm run install:browsers
 
       - name: Run Cucumber Tests
-        run: npm test -- --tags "@${{ matrix.test_suite }}"
+        run: npm run test "@${{ matrix.test_suite }}"
         continue-on-error: true
 
       - name: Merge Reports
