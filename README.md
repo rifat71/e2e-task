@@ -46,13 +46,15 @@ npm run install:browsers
 To run all tests, use the following command:
 
 ```bash
-npm run all-test
+HEADLESS=false npm run all-test
 ```
 ### Run Tests with Specific Tags
 To run tests with a specific tag (e.g., @wip4), use the following command:
 ```bash
 npm run test @wip4
 ```
+
+If HEADLESS=false is set, the browser will open and run the test in an open browser. If HEADLESS=true or the variable is not set, the test will run in headless mode.
 
 ## Project Structure
 The project is structured as follows:
