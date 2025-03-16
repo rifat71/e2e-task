@@ -57,7 +57,7 @@ class CheqQASuitePartnerPage extends BasePage {
     }
     this.totalPrice += priceValue;
 
-    console.log(`Added ${itemName} ($${priceValue}) to cart. Current total: $${this.totalPrice}`);
+    // console.log(`Added ${itemName} ($${priceValue}) to cart. Current total: $${this.totalPrice}`);
 
     await this.clickById(itemId);
     const itemDetailsPage = new ItemDetailsPage(this.page);

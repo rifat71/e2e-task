@@ -21,8 +21,6 @@ class MyOrderPage extends BasePage {
   async clickSavePreOrderButton(text, world) {
     const finalPrice = await this.finalPrice.innerText();
     world.finalPriceText = finalPrice;
-    console.log("finalPrice : "+finalPrice);
-    console.log("this.finalPriceText : "+world.finalPriceText);
     await this.clickButton(text);
   }
 }
