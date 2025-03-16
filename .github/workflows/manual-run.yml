@@ -7,18 +7,18 @@ on:
   pull_request:
       branches:
         - main
-  workflow_dispatch:
-    inputs:
-      test_suite:
-        description: 'Choose test suite (regression, sanity, parallel, all)'
-        required: true
-        default: 'all'
-        type: choice
-        options:
-          - regression
-          - sanity
-          - parallel
-          - all
+  # workflow_dispatch:
+  #   inputs:
+  #     test_suite:
+  #       description: 'Choose test suite (regression, sanity, parallel, all)'
+  #       required: true
+  #       default: 'regression'
+  #       type: choice
+  #       options:
+  #         - regression
+  #         - sanity
+  #         - parallel
+  #         - all
 
 jobs:
   test:
@@ -26,7 +26,7 @@ jobs:
 
     strategy:
       matrix:
-        test_suite: [regression, sanity, parallel, all]
+        test_suite: [regression, sanity, parallel]
       fail-fast: false
 
     steps:
@@ -44,12 +44,7 @@ jobs:
         run: npm run install:browsers
 
       - name: Run Cucumber Tests
-        run: |
-          if [[ "${{ matrix.test_suite }}" == "all" ]]; then
-            npm test
-          else
-            npm test -- --tags "@${{ matrix.test_suite }}"
-          fi
+        run: npm test -- --tags "@${{ matrix.test_suite }}"
         continue-on-error: true
 
       - name: Merge Reports
@@ -60,7 +55,7 @@ jobs:
 
       - name: Generate Combined Report
         if: always()
-        run: npm run report
+        run: npm run generate-report
 
       - name: Archive Combined Report
         uses: actions/upload-artifact@v4
