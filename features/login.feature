@@ -10,4 +10,4 @@ Feature: Login functionality
   Scenario: Unsuccessful login with invalid credentials
     Given I am on the login page
     When I enter email "dummy@gmail.com" and password "12345678"
-    Then I should see an error message "ErrorInvalid Username or Password"
+    Then I should see an error message "ErrorInvalid Username or Password..."
