@@ -10,20 +10,14 @@ class PopupPage extends BasePage {
   }
 
   async clickPlaceOrderButton() {
-    // const isPopupVisible = await this.createNewOrderButton.waitFor({ state: 'visible', timeout: 5000 }).catch(() => false);
     const isPopupVisible = await this.createNewOrderButton.isVisible({ timeout: 2000 });
-    console.log("isPopupVisible : "+ isPopupVisible);
     if (isPopupVisible) {
-      // await this.createNewOrderButton.waitFor({ state: 'visible' });
       await this.createNewOrderButton.click();
       await this.continueButoon.waitFor({ state: 'visible' });
       await this.continueButoon.click();
       return isPopupVisible;
     } else {
       await this.placeOrderButton.click();
-      // await this.createNewOrderButton.click();
-      // await this.continueButoon.waitFor({ state: 'visible' });
-      // await this.continueButoon.click();
       return isPopupVisible;
     }
   }

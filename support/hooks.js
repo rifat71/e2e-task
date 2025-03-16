@@ -14,15 +14,17 @@ Before(async function () {
 After(async function (scenario) {
   console.log("status: " + scenario.result.status);
   if (scenario.result.status === Status.FAILED) {
-      try {
-          if (this.debug) console.log('After Hook: ' + scenario.result.status);
-          await this.screenshot.create(sanitize(_.toLower(scenario.pickle.name) + ".png").replace(/ /g, "_"));
-      } catch (e) {
-          console.error(e);
-      }
+    try {
+      if (this.debug) console.log('After Hook: ' + scenario.result.status);
+      await this.screenshot.create(sanitize(_.toLower(scenario.pickle.name) + ".png").replace(/ /g, "_"));
+    } catch (e) {
+      console.error(e);
+    }
   }
 
-  await this.browser.close();
+  if (this.browser) {
+    await this.browser.close();
+  }
   await this.sleep(700);
 });
 
@@ -30,6 +32,10 @@ AfterAll(async function () {
   console.log("Execute after all hook.");
 
   setTimeout(() => {
+    try {
       Report.generate();
-  }, 1000)
+    } catch (error) {
+      console.error("Failed to generate HTML report:", error);
+    }
+  }, 2000);
 });
