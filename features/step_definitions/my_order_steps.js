@@ -12,11 +12,10 @@ Then('I should see the {string} title on my-order page', async function (title) 
 
 Then('I should see the correct subtotal', async function () {
   myOrderPage = new MyOrderPage(this.page);
-  const subtotal = await myOrderPage.verifySubtotal();
-  expect(subtotal).toContain('$');
+  await myOrderPage.verifySubtotal(this.totalPrice);
 });
 
 When('I click the {string} button on my-order page', async function (buttonText) {
   myOrderPage = new MyOrderPage(this.page);
-  await myOrderPage.clickSavePreOrderButton(buttonText);
+  await myOrderPage.clickSavePreOrderButton(buttonText, this);
 });

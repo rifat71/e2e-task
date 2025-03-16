@@ -13,6 +13,13 @@ class PaymentPage extends BasePage {
     await this.creditCardButton.click();
   }
 
+  async clickVerifySubtotalButton(finalPriceText) {
+    const verifySubtotalButton = this.page.locator(`//span[text()='Verify subtotal: ${finalPriceText}']`);
+    await verifySubtotalButton.waitFor({ state: 'visible' });
+    await verifySubtotalButton.click();
+    console.log(`Clicked "Verify subtotal: ${finalPriceText}" button.`);
+  }
+
   async fillInputInIframe(iframeTitle, inputSelector, value) {
     const iframe = this.page.frameLocator(`iframe[title="${iframeTitle}"]`);
     const inputField = iframe.locator(inputSelector);

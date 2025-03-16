@@ -20,10 +20,12 @@ Then('I should see the {string} text on cheqQASuitePartnerPage page', async func
 When('I add 1 item from each category to the cart', async function (dataTable) {
   cheqQASuitePartnerPage = new CheqQASuitePartnerPage(this.page);
   const items = dataTable.hashes();
+  this.totalPrice = 0;
 
   for (const item of items) {
     const { Category, 'Item Name': itemName } = item;
     await cheqQASuitePartnerPage.addItemToCart(Category, itemName);
+    this.totalPrice = cheqQASuitePartnerPage.totalPrice;
   }
 });
 

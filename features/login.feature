@@ -38,10 +38,10 @@ Feature: Login functionality
       | Desserts - Pantry 10 East    | Margarita         |
       | Beer - East                  | Chicken Teriyaki  |
       | Burgers                      | Farm house burger |
-    # And I wait for 30 sec
     Then I should see "6" items in the cart on cheqQASuitePartnerPage page
     When I click the View Cart button on cheqQASuitePartnerPage page
     Then I should see the "My Order" title on my-order page
+    # And I should see the correct subtotal
     When I click the 'Save  Pre-Order' button on my-order page
     When I select the Credit Card payment method
     And I enter the payment details:
@@ -50,4 +50,5 @@ Feature: Login functionality
       | Expiry Date     | 03/30              |
       | Security Code   | 7373               |
       | Cardholder Name | CHEQ by Cantaloupe |
-    # And I should see the correct subtotal
+    Then I click the Verify Subtotal button
+    

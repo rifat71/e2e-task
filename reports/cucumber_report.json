@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2287466292
+              "duration": 2439941791
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 14,
             "name": "I am on the login page",
             "match": {
-              "location": "features/step_definitions/loginSteps.js:10"
+              "location": "features/step_definitions/loginSteps.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 11838121042
+              "duration": 21525691250
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 15,
             "name": "I enter email 'automate.cheq@yopmail.com' and password 'Automation@2025'",
             "match": {
-              "location": "features/step_definitions/loginSteps.js:15"
+              "location": "features/step_definitions/loginSteps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 112745542
+              "duration": 81013208
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 16,
             "name": "I should see the \"My Events\" header",
             "match": {
-              "location": "features/step_definitions/my_events_steps.js:13"
+              "location": "features/step_definitions/my_events_steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 1288298790
+              "duration": 1300632708
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 17,
             "name": "I should see the \"March 2025\" text on my-event page",
             "match": {
-              "location": "features/step_definitions/my_events_steps.js:19"
+              "location": "features/step_definitions/my_events_steps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 2882750
+              "duration": 7704333
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 18,
             "name": "I click the \"17\" button on my-event page",
             "match": {
-              "location": "features/step_definitions/my_events_steps.js:25"
+              "location": "features/step_definitions/my_events_steps.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 217251082
+              "duration": 829726209
             }
           },
           {
@@ -88,11 +88,11 @@
             "line": 19,
             "name": "I click the \"Automation Horizon\" link on my-event page",
             "match": {
-              "location": "features/step_definitions/my_events_steps.js:30"
+              "location": "features/step_definitions/my_events_steps.js:29"
             },
             "result": {
               "status": "passed",
-              "duration": 821745416
+              "duration": 835353666
             }
           },
           {
@@ -101,11 +101,11 @@
             "line": 20,
             "name": "I click the \"CONTINUE\" button on my-event page",
             "match": {
-              "location": "features/step_definitions/my_events_steps.js:25"
+              "location": "features/step_definitions/my_events_steps.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 30167042
+              "duration": 26487207
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 382962833
+              "duration": 361275125
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 810605708
+              "duration": 1328467209
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 837097541
+              "duration": 1352004333
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41978291
+              "duration": 26948791
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 346031625
+              "duration": 786430749
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 855165958
+              "duration": 340759249
             }
           },
           {
@@ -196,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1800996792
+              "duration": 1932813042
             }
           },
           {
@@ -209,7 +209,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5998541
+              "duration": 21029208
             }
           },
           {
@@ -269,46 +269,46 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9331036415
+              "duration": 9413201082
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 42,
+            "line": 41,
             "name": "I should see \"6\" items in the cart on cheqQASuitePartnerPage page",
             "match": {
-              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:30"
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 4313374
+              "duration": 5838124
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 43,
+            "line": 42,
             "name": "I click the View Cart button on cheqQASuitePartnerPage page",
             "match": {
-              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:36"
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 841278000
+              "duration": 847329417
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 44,
+            "line": 43,
             "name": "I should see the \"My Order\" title on my-order page",
             "match": {
               "location": "features/step_definitions/my_order_steps.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 1798119582
+              "duration": 3865488582
             }
           },
           {
@@ -317,11 +317,11 @@
             "line": 45,
             "name": "I click the 'Save  Pre-Order' button on my-order page",
             "match": {
-              "location": "features/step_definitions/my_order_steps.js:19"
+              "location": "features/step_definitions/my_order_steps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 41491291
+              "duration": 55089999
             }
           },
           {
@@ -334,7 +334,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2397195665
+              "duration": 3395199000
             }
           },
           {
@@ -382,7 +382,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1926804541
+              "duration": 2399060375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "I click the Verify Subtotal button",
+            "match": {
+              "location": "features/step_definitions/payment_steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47712208
             }
           },
           {
@@ -390,7 +403,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 182686583
+              "duration": 202144833
             }
           }
         ],

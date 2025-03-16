@@ -49,6 +49,17 @@ class CheqQASuitePartnerPage extends BasePage {
     if (!itemId) {
       throw new Error(`Item "${itemName}" not found in category "${category}".`);
     }
+
+    const itemPrice = await this.page.locator(`//h2[text()='${category}']/following-sibling::div/a[@id='${itemId}']/div/p`).innerText();
+    const priceValue = parseFloat(itemPrice.replace(/[^0-9.]/g, ''));
+
+    if (!this.totalPrice) {
+      this.totalPrice = 0;
+    }
+    this.totalPrice += priceValue;
+
+    console.log(`Added ${itemName} ($${priceValue}) to cart. Current total: $${this.totalPrice}`);
+
     await this.clickById(itemId);
     const itemDetailsPage = new ItemDetailsPage(this.page);
     await itemDetailsPage.addItemToOrder();
