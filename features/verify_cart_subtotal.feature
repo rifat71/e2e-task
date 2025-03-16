@@ -1,6 +1,6 @@
+@wip1
 Feature: Cart and Payment Flow
-
-
+  @regression
   Scenario: Verify subtotal after adding items to the cart
     Given I am on the login page
     When I enter email 'automate.cheq@yopmail.com' and password 'Automation@2025'
