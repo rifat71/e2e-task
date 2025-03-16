@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1729233916
+              "duration": 2287466292
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10176422083
+              "duration": 11838121042
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 75161750
+              "duration": 112745542
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1294959707
+              "duration": 1288298790
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4933250
+              "duration": 2882750
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 149855916
+              "duration": 217251082
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 824497165
+              "duration": 821745416
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25043708
+              "duration": 30167042
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 793265708
+              "duration": 382962833
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 113728874
+              "duration": 810605708
             }
           },
           {
@@ -144,7 +144,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 841401834
+              "duration": 837097541
             }
           },
           {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33081166
+              "duration": 41978291
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 791234375
+              "duration": 346031625
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 108156040
+              "duration": 855165958
             }
           },
           {
@@ -196,7 +196,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1420461374
+              "duration": 1800996792
             }
           },
           {
@@ -209,7 +209,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8693540
+              "duration": 5998541
             }
           },
           {
@@ -269,20 +269,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9694041124
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "I wait for 30 sec",
-            "match": {
-              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 30016491624
+              "duration": 9331036415
             }
           },
           {
@@ -295,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23265708
+              "duration": 4313374
             }
           },
           {
@@ -308,7 +295,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33198625
+              "duration": 841278000
             }
           },
           {
@@ -321,7 +308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1303529749
+              "duration": 1798119582
             }
           },
           {
@@ -334,7 +321,68 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56912624
+              "duration": 41491291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "I select the Credit Card payment method",
+            "match": {
+              "location": "features/step_definitions/payment_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2397195665
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Card Number",
+                      "3700 000000 00002"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Expiry Date",
+                      "03/30"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Security Code",
+                      "7373"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Cardholder Name",
+                      "CHEQ by Cantaloupe"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 47,
+            "name": "I enter the payment details:",
+            "match": {
+              "location": "features/step_definitions/payment_steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1926804541
             }
           },
           {
@@ -342,7 +390,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1006554458
+              "duration": 182686583
             }
           }
         ],

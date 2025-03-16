@@ -43,4 +43,11 @@ Feature: Login functionality
     When I click the View Cart button on cheqQASuitePartnerPage page
     Then I should see the "My Order" title on my-order page
     When I click the 'Save  Pre-Order' button on my-order page
+    When I select the Credit Card payment method
+    And I enter the payment details:
+      | Field           | Value              |
+      | Card Number     | 3700 000000 00002  |
+      | Expiry Date     | 03/30              |
+      | Security Code   | 7373               |
+      | Cardholder Name | CHEQ by Cantaloupe |
     # And I should see the correct subtotal
