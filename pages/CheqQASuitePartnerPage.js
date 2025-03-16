@@ -4,7 +4,6 @@ const ItemDetailsPage = require('./ItemDetailsPage');
 class CheqQASuitePartnerPage extends BasePage {
   constructor(page) {
     super(page);
-    this.page = page;
     this.categoryToItemMap = {
       'Soft Drinks - Pantry 4 West': {
         'Coke (6 Pack)': 'item-363887',

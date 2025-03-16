@@ -3,7 +3,6 @@ const BasePage = require("./BasePage");
 class PaymentPage extends BasePage {
   constructor(page) {
     super(page);
-    this.page = page;
     this.creditCardButton = page.locator(`//button[@aria-label='Credit Card']`);
     this.cardHolderNameInput = page.locator(`//input[@name='holderName']`);
   }

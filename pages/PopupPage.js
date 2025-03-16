@@ -4,7 +4,6 @@ const BasePage = require("./BasePage");
 class PopupPage extends BasePage{
   constructor(page) {
     super(page);
-    this.page = page;
     this.placeOrderButton = page.locator("//h6[text()='Place an order?']/../button");
   }
 

@@ -1,6 +1,8 @@
-class ItemDetailsPage {
+const BasePage = require("./BasePage");
+
+class ItemDetailsPage extends BasePage{
   constructor(page) {
-    this.page = page;
+    super(page);
     this.addToOrderButton = page.locator("//button[@data-testid='add-to-order-button']");
     this.backButton = page.locator("//*[@data-testid='ArrowBackIcon']");
   }

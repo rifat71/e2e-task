@@ -4,7 +4,6 @@ const { expect } = require('chai');
 class MyOrderPage extends BasePage {
   constructor(page) {
     super(page);
-    this.page = page;
     this.subtotalText = page.locator("//span[text()='Subtotal']/../../following-sibling::div");
     this.finalPrice = page.locator("//span[text()='Order Total']/../../following-sibling::div");
   }

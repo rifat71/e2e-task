@@ -3,7 +3,6 @@ const BasePage = require("./BasePage");
 class SuitePreferencesPage extends BasePage{
   constructor(page) {
     super(page);
-    this.page = page;
   }
 
   async verifySuitePreferencesHeader() {
