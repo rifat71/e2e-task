@@ -32,7 +32,7 @@ jobs:
         run: npm run install:browsers
 
       - name: Run Cucumber Tests
-        run: npm run test "@${{ matrix.test_suite }}"
+        run: HEADLESS=true npm run test "@${{ matrix.test_suite }}"
         continue-on-error: true
 
       # - name: Merge Reports
@@ -41,18 +41,18 @@ jobs:
       #     mkdir -p combined-reports
       #     cp -r reports/* combined-reports/ || true
 
-      - name: Generate Combined HTML Report
-        if: always()
-        run: |
-          npm run generate-report
+      # - name: Generate Combined HTML Report
+      #   if: always()
+      #   run: |
+      #     npm run generate-report
 
-      - name: Archive Combined Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: combined-test-report-${{ github.run_id }}
-          path: combined-reports/cucumber_report.html
-          if-no-files-found: warn
-          compression-level: 6
-          overwrite: false
-          include-hidden-files: false
+      # - name: Archive Combined Report
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: combined-test-report-${{ github.run_id }}
+      #     path: combined-reports/cucumber_report.html
+      #     if-no-files-found: warn
+      #     compression-level: 6
+      #     overwrite: false
+      #     include-hidden-files: false
 
