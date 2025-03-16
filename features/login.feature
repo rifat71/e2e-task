@@ -23,7 +23,6 @@ Feature: Login functionality
     When I select the "Suite (North)" radio button on my-suites page
     And I click the "Continue" button on my-suites page
 
-    # Then I should see the "Place an order?" on popup page
     When I click the "Place an order" button on popup
 
     Then I should see the "Suite Preferences" header on suite-preference page
