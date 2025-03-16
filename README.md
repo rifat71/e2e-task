@@ -49,9 +49,9 @@ To run all tests, use the following command:
 npm run all-test
 ```
 ### Run Tests with Specific Tags
-To run tests with a specific tag (e.g., @wip1), use the following command:
+To run tests with a specific tag (e.g., @wip4), use the following command:
 ```bash
-npm run test @wip1
+npm run test @wip4
 ```
 
 ## Project Structure
