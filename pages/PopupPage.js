@@ -9,7 +9,7 @@ class PopupPage extends BasePage {
   }
 
   async clickPlaceOrderButton() {
-    const isPopupVisible = await this.existingOrderPopup.waitFor({ state: 'visible', timeout: 3000 }).catch(() => false);
+    const isPopupVisible = await this.existingOrderPopup.waitFor({ state: 'visible', timeout: 2000 }).catch(() => false);
 
     if (isPopupVisible) {
       await this.createNewOrderButton.click();
