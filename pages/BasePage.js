@@ -20,8 +20,22 @@ class BasePage {
     return this.page.locator(`//div[text()='${divText}']`);
   }
 
+  getPTagNormalizeSpaceLocatorByText(text) {
+    return this.page.locator(`//p[normalize-space()='${text}']`);
+  }
+
   getLocatorByDataTestId(id) {
     return this.page.locator(`//*[@data-testid='${id}']`);
+  }
+
+  getLocatorById(id) {
+    return this.page.locator(`//*[@id='${id}']`);
+  }
+
+  // click
+  async clickById(id) {
+    const buttonLocator = this.getLocatorById(id);
+    await buttonLocator.click();
   }
 
   async clickButton(buttonText) {
@@ -29,6 +43,7 @@ class BasePage {
     await buttonLocator.click();
   }
 
+  // verify
   async verifyHeader(headerText) {
     const headerLocator = this.getHeaderLocator(headerText);
     await headerLocator.waitFor({ state: 'visible' });
@@ -38,6 +53,13 @@ class BasePage {
 
   async verifyDivText(divText) {
     const divLocator = this.getDivLocator(divText);
+    await divLocator.waitFor({ state: 'visible' });
+    const actualText = await divLocator.textContent();
+    return actualText === divText;
+  }
+
+  async verifyPTagNormalizeSpaceText(divText) {
+    const divLocator = this.getPTagNormalizeSpaceLocatorByText(divText);
     await divLocator.waitFor({ state: 'visible' });
     const actualText = await divLocator.textContent();
     return actualText === divText;

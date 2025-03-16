@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2538020999
+              "duration": 1492404875
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8000879208
+              "duration": 10679811375
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 94456082
+              "duration": 121953332
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1289698499
+              "duration": 1293605292
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3198666
+              "duration": 4108416
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 222916166
+              "duration": 219553125
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 835646916
+              "duration": 856256874
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18455959
+              "duration": 19570041
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 786449458
+              "duration": 787409375
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 198805791
+              "duration": 213923624
             }
           },
           {
@@ -140,50 +140,136 @@
             "line": 24,
             "name": "I click the \"Continue\" button on my-suites page",
             "match": {
-              "location": "features/step_definitions/my_suites_steps.js:18"
+              "location": "features/step_definitions/my_suites_steps.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 839067332
+              "duration": 847231334
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 27,
+            "line": 26,
             "name": "I click the \"Place an order\" button on popup",
             "match": {
               "location": "features/step_definitions/popup_steps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 30317834
+              "duration": 31545292
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 29,
+            "line": 28,
             "name": "I should see the \"Suite Preferences\" header on suite-preference page",
             "match": {
               "location": "features/step_definitions/suite_preferences_steps.js:7"
             },
             "result": {
               "status": "passed",
-              "duration": 792829291
+              "duration": 791082166
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 30,
+            "line": 29,
             "name": "I click the \"Save\" button on suite-preferance page",
             "match": {
               "location": "features/step_definitions/suite_preferences_steps.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 216056749
+              "duration": 212487750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I should see the header on cheqQASuitePartnerPage page",
+            "match": {
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1427781166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I should see the \"Pre-Order for: Suite (North)\" text on cheqQASuitePartnerPage page",
+            "match": {
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7092665
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Category",
+                      "Item Name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Soft Drinks - Pantry 4 West",
+                      "Coke (6 Pack)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Soft Drinks - Pantry 10 East",
+                      "Sprite (6 Pack)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Desserts - Pantry 4 West",
+                      "Biryani"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Desserts - Pantry 10 East",
+                      "Margarita"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Beer - East",
+                      "Chicken Teriyaki"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Burgers",
+                      "Farm house burger"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I add 1 item from each category to the cart",
+            "match": {
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9798894417
             }
           },
           {
@@ -191,7 +277,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 162261457
+              "duration": 214727874
             }
           }
         ],

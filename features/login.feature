@@ -28,27 +28,17 @@ Feature: Login functionality
     Then I should see the "Suite Preferences" header on suite-preference page
     When I click the "Save" button on suite-preferance page
 
-    # Then I should see the "CHEQ QA Suite Partner" header
-    # And I should see the "Pre-Order for: Suite (North)" text
-    # When I click the "Arrow Right" icon
-    # And I select the "Coke (6 Pack)" item
-    # And I add the item to the order
-    # And I go back to the Categories page
-    # And I select the "Sprite (6 Pack)" item
-    # And I add the item to the order
-    # And I go back to the Categories page
-    # And I select the "Biryani" item
-    # And I add the item to the order
-    # And I go back to the Categories page
-    # And I select the "Margarita" item
-    # And I add the item to the order
-    # And I go back to the Categories page
-    # And I select the "Chicken Teriyaki" item
-    # And I add the item to the order
-    # And I go back to the Categories page
-    # And I select the "Farm house burger" item
-    # And I add the item to the order
-    # And I go back to the Categories page
+    Then I should see the header on cheqQASuitePartnerPage page
+    And I should see the "Pre-Order for: Suite (North)" text on cheqQASuitePartnerPage page
+    When I add 1 item from each category to the cart
+      | Category                     | Item Name         |
+      | Soft Drinks - Pantry 4 West  | Coke (6 Pack)     |
+      | Soft Drinks - Pantry 10 East | Sprite (6 Pack)   |
+      | Desserts - Pantry 4 West     | Biryani           |
+      | Desserts - Pantry 10 East    | Margarita         |
+      | Beer - East                  | Chicken Teriyaki  |
+      | Burgers                      | Farm house burger |
+
     # Then I should see "6" items in the cart
     # When I click the "View Cart" button
     # Then I should see the "My Order" title

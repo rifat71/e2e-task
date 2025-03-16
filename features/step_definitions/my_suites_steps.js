@@ -12,6 +12,7 @@ Then('I should see the {string} header on my-suites page', async function (text)
 
 When('I select the {string} radio button on my-suites page', async function (radioButtonText) {
   mySuitesPage = new MySuitesPage(this.page);
+  this.selectedSuite = radioButtonText;
   await mySuitesPage.selectSuiteNorth(radioButtonText);
 });
 

@@ -1,24 +1,54 @@
+const BasePage = require("./BasePage");
+const ItemDetailsPage = require('./ItemDetailsPage');
+
 // pages/CheqQASuitePartnerPage.js
-class CheqQASuitePartnerPage {
+class CheqQASuitePartnerPage extends BasePage {
   constructor(page) {
+    super(page);
     this.page = page;
-    this.cheqQASuitePartnerHeader = page.locator("//h4[text()='CHEQ QA Suite Partner']");
-    this.preOrderText = page.locator("//p[contains(text(), 'Pre-Order for: Suite (North)')]");
-    this.arrowRightIcon = page.locator("//*[@data-testid='KeyboardArrowRightIcon']");
+    this.categoryToItemMap = {
+      'Soft Drinks - Pantry 4 West': {
+        'Coke (6 Pack)': 'item-363887',
+      },
+      'Soft Drinks - Pantry 10 East': {
+        'Sprite (6 Pack)': 'item-308067',
+      },
+      'Desserts - Pantry 4 West': {
+        'Biryani': 'item-340055',
+      },
+      'Desserts - Pantry 10 East': {
+        'Margarita': 'item-308064',
+      },
+      'Beer - East': {
+        'Chicken Teriyaki': 'item-363981',
+      },
+      'Burgers': {
+        'Farm house burger': 'item-363982',
+      },
+    };
+    this.headerTitle = page.locator(`//h1[text()='CHEQ QA Suite Partner']`);
   }
 
   async verifyCheqQASuitePartnerHeader() {
-    await this.cheqQASuitePartnerHeader.waitFor({ state: 'visible' });
-    return await this.cheqQASuitePartnerHeader.isVisible();
+    await this.headerTitle.waitFor({ state: 'visible' });
+    return await this.headerTitle.isVisible();
   }
 
-  async verifyPreOrderText() {
-    await this.preOrderText.waitFor({ state: 'visible' });
-    return await this.preOrderText.isVisible();
+  async verifyPreOrderText(text) {
+    return await this.verifyPTagNormalizeSpaceText(text);
   }
 
-  async clickArrowRightIcon() {
-    await this.arrowRightIcon.click();
+  async addItemToCart(category, itemName) {
+    const itemId = this.categoryToItemMap[category]?.[itemName];
+    if (!itemId) {
+      throw new Error(`Item "${itemName}" not found in category "${category}".`);
+    }
+
+    await this.clickById(itemId);
+
+    const itemDetailsPage = new ItemDetailsPage(this.page);
+    await itemDetailsPage.addItemToOrder();
+    // await itemDetailsPage.goBackToCategories();
   }
 }
 
