@@ -1,4 +1,5 @@
-const { Given, Then, When } = require('@cucumber/cucumber');
+const { Then, When } = require('@cucumber/cucumber');
+const Promise = require(`bluebird`);
 const { expect } = require('chai');
 const CheqQASuitePartnerPage = require('../../pages/CheqQASuitePartnerPage');
 
@@ -24,4 +25,21 @@ When('I add 1 item from each category to the cart', async function (dataTable) {
     const { Category, 'Item Name': itemName } = item;
     await cheqQASuitePartnerPage.addItemToCart(Category, itemName);
   }
+});
+
+Then('I should see {string} items in the cart on cheqQASuitePartnerPage page', async function (text) {
+  cheqQASuitePartnerPage = new CheqQASuitePartnerPage(this.page);
+  const actualValue = await cheqQASuitePartnerPage.verifyItemNumberOnCart();
+  expect(actualValue).to.equal(text);
+});
+
+When('I click the View Cart button on cheqQASuitePartnerPage page', async function () {
+  cheqQASuitePartnerPage = new CheqQASuitePartnerPage(this.page);
+  await cheqQASuitePartnerPage.clickViewCart();
+});
+
+When('I wait for {int} sec', async function (timeInSec) {
+  const timeInMs = timeInSec * 1000;
+  await new Promise(resolve => setTimeout(resolve, timeInMs));
+  // await Promise.delay(timeInSec);
 });

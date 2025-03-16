@@ -27,11 +27,18 @@ class CheqQASuitePartnerPage extends BasePage {
       },
     };
     this.headerTitle = page.locator(`//h1[text()='CHEQ QA Suite Partner']`);
+    this.numberOfItemOnCart = page.locator(`//button[@data-test-id='view-cart-btn']/div/span`);
   }
 
   async verifyCheqQASuitePartnerHeader() {
     await this.headerTitle.waitFor({ state: 'visible' });
     return await this.headerTitle.isVisible();
+  }
+
+  async verifyItemNumberOnCart() {
+    await this.numberOfItemOnCart.waitFor({ state: 'visible' });
+    await this.numberOfItemOnCart.isVisible();
+    return this.numberOfItemOnCart.textContent();
   }
 
   async verifyPreOrderText(text) {
@@ -43,12 +50,13 @@ class CheqQASuitePartnerPage extends BasePage {
     if (!itemId) {
       throw new Error(`Item "${itemName}" not found in category "${category}".`);
     }
-
     await this.clickById(itemId);
-
     const itemDetailsPage = new ItemDetailsPage(this.page);
     await itemDetailsPage.addItemToOrder();
-    // await itemDetailsPage.goBackToCategories();
+  }
+
+  async clickViewCart() {
+    return await this.clickButtonByDataTestId('view-cart-btn');
   }
 }
 

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1492404875
+              "duration": 1729233916
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10679811375
+              "duration": 10176422083
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 121953332
+              "duration": 75161750
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1293605292
+              "duration": 1294959707
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4108416
+              "duration": 4933250
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 219553125
+              "duration": 149855916
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 856256874
+              "duration": 824497165
             }
           },
           {
@@ -105,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19570041
+              "duration": 25043708
             }
           },
           {
@@ -118,7 +118,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 787409375
+              "duration": 793265708
             }
           },
           {
@@ -131,7 +131,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 213923624
+              "duration": 113728874
             }
           },
           {
@@ -144,12 +144,12 @@
             },
             "result": {
               "status": "passed",
-              "duration": 847231334
+              "duration": 841401834
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "And ",
             "line": 26,
             "name": "I click the \"Place an order\" button on popup",
             "match": {
@@ -157,7 +157,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31545292
+              "duration": 33081166
             }
           },
           {
@@ -170,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 791082166
+              "duration": 791234375
             }
           },
           {
@@ -183,7 +183,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 212487750
+              "duration": 108156040
             }
           },
           {
@@ -192,11 +192,11 @@
             "line": 31,
             "name": "I should see the header on cheqQASuitePartnerPage page",
             "match": {
-              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:7"
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1427781166
+              "duration": 1420461374
             }
           },
           {
@@ -205,11 +205,11 @@
             "line": 32,
             "name": "I should see the \"Pre-Order for: Suite (North)\" text on cheqQASuitePartnerPage page",
             "match": {
-              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:13"
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 7092665
+              "duration": 8693540
             }
           },
           {
@@ -265,11 +265,76 @@
             "line": 33,
             "name": "I add 1 item from each category to the cart",
             "match": {
-              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:19"
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 9798894417
+              "duration": 9694041124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "I wait for 30 sec",
+            "match": {
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30016491624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "I should see \"6\" items in the cart on cheqQASuitePartnerPage page",
+            "match": {
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23265708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "I click the View Cart button on cheqQASuitePartnerPage page",
+            "match": {
+              "location": "features/step_definitions/cheq_qa_suite_partner_steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33198625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "I should see the \"My Order\" title on my-order page",
+            "match": {
+              "location": "features/step_definitions/my_order_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1303529749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "I click the 'Save  Pre-Order' button on my-order page",
+            "match": {
+              "location": "features/step_definitions/my_order_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56912624
             }
           },
           {
@@ -277,7 +342,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 214727874
+              "duration": 1006554458
             }
           }
         ],

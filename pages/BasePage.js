@@ -32,14 +32,26 @@ class BasePage {
     return this.page.locator(`//*[@id='${id}']`);
   }
 
+  getButtonByDataTestId(id) {
+    return this.page.locator(`//button[@data-test-id='${id}']`);
+  }
+
   // click
   async clickById(id) {
     const buttonLocator = this.getLocatorById(id);
+    await buttonLocator.waitFor({ state: 'visible' });
     await buttonLocator.click();
   }
 
   async clickButton(buttonText) {
     const buttonLocator = this.getButtonLocator(buttonText);
+    await buttonLocator.waitFor({ state: 'visible' });
+    await buttonLocator.click();
+  }
+
+  async clickButtonByDataTestId(id) {
+    const buttonLocator = this.getButtonByDataTestId(id);
+    await buttonLocator.waitFor({ state: 'visible' });
     await buttonLocator.click();
   }
 

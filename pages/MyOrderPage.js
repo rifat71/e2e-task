@@ -1,15 +1,15 @@
+const BasePage = require("./BasePage");
+
 // pages/MyOrderPage.js
-class MyOrderPage {
+class MyOrderPage extends BasePage{
   constructor(page) {
+    super(page);
     this.page = page;
-    this.appBarTitle = page.locator("//*[@data-testid='app-bar-title']");
     this.subtotalText = page.locator("//span[text()='Subtotal']/../../following-sibling::div");
-    this.savePreOrderButton = page.locator("//button[text()='Save Pre-Order']");
   }
 
-  async verifyAppBarTitle(expectedTitle) {
-    const title = await this.appBarTitle.textContent();
-    expect(title).toBe(expectedTitle);
+  async verifyAppBarTitle() {
+    return await this.getTextOfLocatorByDataTestId('app-bar-title');
   }
 
   async verifySubtotal(expectedSubtotal) {
@@ -17,8 +17,8 @@ class MyOrderPage {
     expect(subtotal).toContain(expectedSubtotal);
   }
 
-  async clickSavePreOrderButton() {
-    await this.savePreOrderButton.click();
+  async clickSavePreOrderButton(text) {
+    await this.clickButton(text);
   }
 }
 

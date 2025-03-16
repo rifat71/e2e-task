@@ -23,7 +23,7 @@ Feature: Login functionality
     When I select the "Suite (North)" radio button on my-suites page
     And I click the "Continue" button on my-suites page
 
-    When I click the "Place an order" button on popup
+    And I click the "Place an order" button on popup
 
     Then I should see the "Suite Preferences" header on suite-preference page
     When I click the "Save" button on suite-preferance page
@@ -38,8 +38,9 @@ Feature: Login functionality
       | Desserts - Pantry 10 East    | Margarita         |
       | Beer - East                  | Chicken Teriyaki  |
       | Burgers                      | Farm house burger |
-
-    # Then I should see "6" items in the cart
-    # When I click the "View Cart" button
-    # Then I should see the "My Order" title
+    # And I wait for 30 sec
+    Then I should see "6" items in the cart on cheqQASuitePartnerPage page
+    When I click the View Cart button on cheqQASuitePartnerPage page
+    Then I should see the "My Order" title on my-order page
+    When I click the 'Save  Pre-Order' button on my-order page
     # And I should see the correct subtotal
