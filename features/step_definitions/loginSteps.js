@@ -12,7 +12,7 @@ Given('I am on the login page', async function () {
   await loginPage.navigateToLoginPage();
 });
 
-When('I enter invalid email {string} and password {string}', async function (email, password) {
+When('I enter email {string} and password {string}', async function (email, password) {
   await loginPage.enterEmail(email);
   await loginPage.enterPassword(password);
   await loginPage.clickSubmitButton();

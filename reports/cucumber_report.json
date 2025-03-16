@@ -4,56 +4,186 @@
     "elements": [
       {
         "description": "",
-        "id": "login-functionality;unsuccessful-login-with-invalid-credentials",
+        "id": "login-functionality;verify-subtotal-after-adding-items-to-the-cart",
         "keyword": "Scenario",
-        "line": 8,
-        "name": "Unsuccessful login with invalid credentials",
+        "line": 13,
+        "name": "Verify subtotal after adding items to the cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1397561208
+              "duration": 1914792375
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
+            "line": 14,
             "name": "I am on the login page",
             "match": {
               "location": "features/step_definitions/loginSteps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 15118471000
+              "duration": 9636445625
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
-            "name": "I enter invalid email \"dummy@gmail.com\" and password \"12345678\"",
+            "line": 15,
+            "name": "I enter email 'automate.cheq@yopmail.com' and password 'Automation@2025'",
             "match": {
               "location": "features/step_definitions/loginSteps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 132309583
+              "duration": 77735916
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
-            "name": "I should see an error message \"ErrorInvalid Username or Password\"",
+            "line": 16,
+            "name": "I should see the \"My Events\" header",
             "match": {
-              "location": "features/step_definitions/loginSteps.js:21"
+              "location": "features/step_definitions/my_events_steps.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 1302173334
+              "duration": 1291735916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I should see the \"March 2025\" text on my-event page",
+            "match": {
+              "location": "features/step_definitions/my_events_steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3228459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I click the \"17\" button on my-event page",
+            "match": {
+              "location": "features/step_definitions/my_events_steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221596583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I click the \"Automation Horizon\" link on my-event page",
+            "match": {
+              "location": "features/step_definitions/my_events_steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 848427332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I click the \"CONTINUE\" button on my-event page",
+            "match": {
+              "location": "features/step_definitions/my_events_steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20682416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see the \"My Suites\" header on my-suites page",
+            "match": {
+              "location": "features/step_definitions/my_suites_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 865129042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I select the \"Suite (North)\" radio button on my-suites page",
+            "match": {
+              "location": "features/step_definitions/my_suites_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70709375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click the \"Continue\" button on my-suites page",
+            "match": {
+              "location": "features/step_definitions/my_suites_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 851726999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I click the \"Place an order\" button on popup",
+            "match": {
+              "location": "features/step_definitions/popup_steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25123875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see the \"Suite Preferences\" header on suite-preference page",
+            "match": {
+              "location": "features/step_definitions/suite_preferences_steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 797092499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I click the \"Save\" button on suite-preferance page",
+            "match": {
+              "location": "features/step_definitions/suite_preferences_steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 214723457
             }
           },
           {
@@ -61,14 +191,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 210413708
+              "duration": 166258958
             }
           }
         ],
         "tags": [
           {
             "name": "@wip",
-            "line": 7
+            "line": 12
           }
         ],
         "type": "scenario"
