@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --tags",
+    "test": "cucumber-js --format json:reports/cucumber_report.json --tags",
     "generate-report": "node utils/generate-report.js",
     "install:browsers": "npx playwright install",
     "all-test": "cucumber-js -t '@wip1' --format json:reports/cucumber_report.json"
