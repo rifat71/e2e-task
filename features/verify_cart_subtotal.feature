@@ -37,3 +37,4 @@ Feature: Cart and Payment Flow
       | Security Code   | 7373               |
       | Cardholder Name | CHEQ by Cantaloupe |
     Then I click the Verify Subtotal button
+    And I should see the order confirmation

@@ -50,4 +50,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: combined-test-report
-          path: combined-reports
+          path: combined-reports/cucumber_report.html
+          if-no-files-found: warn
+          compression-level: 6
+          overwrite: false
+          include-hidden-files: false
+
