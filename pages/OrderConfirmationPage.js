@@ -3,7 +3,7 @@ const BasePage = require("./BasePage");
 class OrderConfirmationPage extends BasePage {
   constructor(page) {
     super(page);
-    this.orderConfirmationMessage = page.locator("//h6[starts-with(text(), 'Pre-Order') and contains(text(), 'has been received!')]");
+    this.orderConfirmationMessage = page.locator(`//h6[starts-with(normalize-space(), 'Pre-Order') and contains(normalize-space(), 'has been received!')]`);
     this.orderTotalAmount = page.locator("//p[text()='Order Total']/following-sibling::p");
   }
 

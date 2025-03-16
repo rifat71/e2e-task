@@ -13,8 +13,10 @@ Feature: Cart and Payment Flow
     When I select the "Suite (North)" radio button on my-suites page
     And I click the "Continue" button on my-suites page
     And I click the "Place an order" button on popup
+
     Then I should see the "Suite Preferences" header on suite-preference page
     When I click the "Save" button on suite-preferance page
+
     Then I should see the header on cheqQASuitePartnerPage page
     And I should see the "Pre-Order for: Suite (North)" text on cheqQASuitePartnerPage page
     When I add 1 item from each category to the cart
