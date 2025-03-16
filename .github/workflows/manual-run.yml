@@ -35,16 +35,16 @@ jobs:
         run: npm run test "@${{ matrix.test_suite }}"
         continue-on-error: true
 
-      - name: Merge Reports
-        if: always()
-        run: |
-          mkdir -p combined-reports
-          cp -r reports/* combined-reports/ || true
-
-      # - name: Generate Combined HTML Report
+      # - name: Merge Reports
       #   if: always()
       #   run: |
-      #     npm run generate-report
+      #     mkdir -p combined-reports
+      #     cp -r reports/* combined-reports/ || true
+
+      - name: Generate Combined HTML Report
+        if: always()
+        run: |
+          npm run generate-report
 
       - name: Archive Combined Report
         uses: actions/upload-artifact@v4
